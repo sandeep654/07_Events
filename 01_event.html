@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body> 
+    <h1  >Sandeep Yadav</h1>
+    <img src="hlo.jpg" alt="" id="owl" height="350px" width="400px"> 
+    <p>I am Student of Engineering </p>
+    <h2 class="Software Engineer">I wanna Become Software Engineer in my career ..Wanna be Financial Independent before 30</h2>
+    <h3>Work Hard You know you can do it .You are Smart Enough Guy </h3>
+    <h4>Shouldn't have any fear and have patience .... Without greedy of result do work and enjoy   </h4>
+    <h2 id="ownwebsite">Make your Own Website and App. It takes So much time and effort</h2>
+    <img src="bye.jpg" alt="" id="Heading" height="350px" width="400px">
+<script>
+    // document.getElementById('owl').onclick() = function(){
+    //     alert("Owl Clicked")
+    // }
+
+    document.getElementById('owl').addEventListener('click',function(e) {
+        alert("owl click again")
+        console.log("Sandeep Yadav")
+        console.log(e);
+    // attachEvent()
+    // jQuery - on
+    //   type , timestamp , defaultprevented
+    // target , toElement , srcElement ,currentElement
+    // ScreenX , ScreenY , ClientX , ClientY
+    // altKey , shiftKey , ctrlKey , keyCode     
+     } ,false )
+
+    //  Event Propogation -- 
+    //    1.EventBubling     bottom to top   False
+    //    2.Eventcapturing   top to bottom   True
+
+    document.getElementById("Heading").addEventListener('click',function(e) {
+        alert("Ram Pyare Yadav")
+        console.log(e);
+
+        e.stopPropagation() //stop bubbling 
+        e.preventDefault()
+
+        // console.log(e.target.parentNode) 
+        // removeIt = e.target.parentNode
+            //   removeit.remove() 
+            // removeIt.parentNode.removechild(removeIt)
+            // e.target.id 
+            // e.target.tagName
+           })
+
+
+</script>
+</html>
